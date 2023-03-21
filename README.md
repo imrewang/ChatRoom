@@ -126,5 +126,5 @@ strncasecmp(msg.content,EXIT,strlen(EXIT))==0
 
 ## （五）改进方向
 
-### 1.支持对无头消息的发送与接收
+1.支持对无头消息的发送与接收
 
