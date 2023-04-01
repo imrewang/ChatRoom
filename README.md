@@ -20,6 +20,7 @@ C++
 
 ### 2.部署截图
 
+![部署截图](https://github.com/imrewang/ChatRoom/blob/main/screenshot/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%202023-04-01%20132759.png?raw=true)
 
 ### 3.运行方式
 
@@ -31,6 +32,10 @@ make
 
 
 ## （三）运行截图
+
+![运行截图1](https://github.com/imrewang/ChatRoom/blob/main/screenshot/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%202023-04-01%20133310.png?raw=true)
+
+![运行截图2](https://github.com/imrewang/ChatRoom/blob/main/screenshot/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%202023-04-01%20133619.png?raw=true)
 
 
 ## （四）总结
@@ -110,6 +115,11 @@ C++
 
 ## （三）运行截图
 
+![运行截图1](https://github.com/imrewang/ChatRoom/blob/main/screenshot/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%202023-04-01%20133310.png?raw=true)
+
+![运行截图2](https://github.com/imrewang/ChatRoom/blob/main/screenshot/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%202023-04-01%20133607.png?raw=true)
+
+![运行截图3](https://github.com/imrewang/ChatRoom/blob/main/screenshot/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%202023-04-01%20133613.png?raw=true)
 
 ## （四）总结
 
