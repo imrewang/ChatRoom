@@ -21,6 +21,15 @@ C++
 ### 2.部署截图
 
 
+### 3.运行方式
+
+make
+
+./chatroom_server
+
+./chatroom_client
+
+
 ## （三）运行截图
 
 
@@ -28,33 +37,45 @@ C++
 
 ### 1.支持多个客户端接入，实现聊天室基本功能
 
+```
 list<int> clients_list;                   //客户端列表
+```
 
 ### 2.启动服务，建立监听端口等待客户端连接 
 
+```
 int sockfd = events[i].data.fd;
 			
 //新用户连接
 if(sockfd == listener)
+```
 
 ### 3.使用epoll机制实现并发，增加效率 
 
+```
 //在内核中创建事件表  epfd是一个句柄(红黑树的树根)
 epfd = epoll_create(EPOLL_SIZE);
+```
 
 ### 4.客户端连接时，发送欢迎消息，并存储连接记录
 
+```
 clients_list.push_back(clientfd);
+```
 
 ### 5.客户端发送消息时，根据消息类型，广播给所有用户(群聊)或者指定用户(私聊) 
 
+```
 if(msg.content[0]=='\\'&&isdigit(msg.content[1]))
+```
 
 ### 6.客户端请求退出时，对相应连接信息进行清理 
 
+```
 if(strncasecmp(msg.content,EXIT,strlen(EXIT))==0){
 		isClientwork = 0;
 }
+```
 
 ## （五）改进方向
 
@@ -87,9 +108,6 @@ ubuntu
 
 C++
 
-### 2.部署截图
-
-
 ## （三）运行截图
 
 
@@ -97,25 +115,33 @@ C++
 
 ### 1.连接服务器 
 
+```
 connect(sock,(struct sockaddr*)&serverAddr,sizeof(serverAddr))
+```
 
 ### 2.支持用户输入消息，发送给服务端 
 
+```
 write(pipe_fd[1],send_buf,sizeof(send_buf))
 
 int ret = read(events[i].data.fd,recv_buf,BUF_SIZE);
 
 send(sock,recv_buf,sizeof(recv_buf),0);
+```
 
 ### 3.接受并显示服务端发来的消息 
 
+```
 int ret = recv(sock,recv_buf,BUF_SIZE,0);
 
 cout<<msg.content<<endl;
+```
 
 ### 4.退出连接
 
+```
 strncasecmp(msg.content,EXIT,strlen(EXIT))==0
+```
 
 ### 客户端需要两个进程分别支持以下功能：
 
